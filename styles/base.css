@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.job-header {
+    margin-bottom: 0.5rem;
+}
+
+.job-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.job-meta {
+    font-size: 0.95rem;
+    color: #555;
+}
