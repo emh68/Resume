@@ -2,94 +2,125 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/base.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="autho" content="Eli Hansen">
+    <meta name="description" content="Eli Hansen Resume">
+    <!-- TODO: Replace with actual favicon -->
+    <link rel="icon" type="image/x-icon" href="path/to/icon.ico">
+    <link rel="stylesheet" href="styles/base.css" />
     <title>Resume</title>
 </head>
 
 <body>
-    <h1>Elijah M Hansen</h1>
-    <a href="mailto:elihansen@yahoo.com" target="_blank">email</a>
-    <a href="https://www.linkedin.com/in/elihansen1/" target="_blank">LinkedIn</a>
-    <a href="https://github.com/emh68" target="_blank">GitHub</a>
-    <a href="https://www." target="_blank">Portfolio</a>
-    <hr>
-    <!--PROFESSIONAL SUMMARY-->
-    <h2>PROFESSIONAL SUMMARY</h2>
-    <p></p>
-    <!--EDUCATION-->
-    <h2>EDUCATION</h2>
-    <hr>
-    <span class="dates"></span>
-    <!--SKILLS-->
-    <h2>SOFTWARE & PROGRAMMING EXPERIENCE</h2>
-    <hr>
-    <ul>
-        <li><strong>Programming & Web:</strong> Python, C#, HTML, CSS, JavaScript (familiar with: Java, C++)</li>
-        <li><strong>Cloud & Virtualization:</strong> AWS, Azure, VMware</li>
-        <li><strong>Databases & APIs:</strong> Familiar with: MySQL, RESTful APIs</li>
-        <li><strong>Systems & Technologies:</strong> Linux CLI, Git, GitHub, VMware, SSH/SFTP, RAID, SAN/NAS</li>
-        <li><strong>Networking & Infrastructure:</strong> TCP/IP, subnetting, networking troubleshooting, basic firewall
-            rules</li>
-        <li><strong>Soft Skills:</strong> Strong problem-solving ability, self-motivated, quick learner, highly
-            organized, excellent written and verbal communication skills</li>
-    </ul>
+    <div class="resume-container">
 
-    <!--PROFESSIONAL EXPERIENCE-->
-    <h2>PROFESSIONAL EXPERIENCE</h2>
-    <hr>
+        <header>
+            <h1>Elijah M Hansen</h1>
+            <hr>
+            <div class="phone">1-801-906-9296</div>
+            <a href="mailto:elihansen@yahoo.com" target="_blank">Email</a>
+            <a href="https://www.linkedin.com/in/elihansen1/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/emh68" target="_blank">GitHub</a>
+            <a href="https://www." target="_blank">Portfolio</a>
+        </header>
+        <main>
+            <!-- PROFESSIONAL SUMMARY -->
+            <h2>Professional Summary</h2>
+            <p><!-- Add your summary here --></p>
 
-    <div class="job-header">
-        <div class="job-title">Cultural Arts Tech Asst (Audio Engineer)</div>
-        <div class="job-meta">City of Rexburg – Rexburg, ID | Apr 2023 – Present</div>
+            <!-- EDUCATION -->
+            <h2>Education</h2>
+            <div class="education-degree">
+                <div><strong>B.S. Software Development</strong></div>
+                <div class="degree-date">Dec 2026</div>
+                <div class="education-school"><em>Brigham Young University – Idaho, Rexburg, ID</em></div>
+            </div>
+            <div class="education-degree">
+                <div><strong>B.A. Political Science</strong></div>
+                <div class="degree-date">Apr 2012</div>
+                <div class="education-school"><em>Brigham Young University, Provo, UT</em></div>
+            </div>
+            <div class="education-degree">
+                <div><strong>B.A. French</strong></div>
+                <div class="degree-date">Apr 2012</div>
+                <div class="education-school"><em>Brigham Young University, Provo, UT</em></div>
+            </div>
+
+
+            <!-- SKILLS -->
+            <h2>Software & Programming Experience</h2>
+            <ul>
+                <li><strong>Programming & Web:</strong> Python, C#, HTML, CSS, JavaScript (familiar with: Java, C++)
+                </li>
+                <li><strong>Cloud & Virtualization:</strong> AWS, Azure, VMware</li>
+                <li><strong>Databases & APIs:</strong> Familiar with: MySQL, RESTful APIs</li>
+                <li><strong>Systems & Technologies:</strong> Linux CLI, Git, GitHub, VMware, SSH/SFTP, RAID, SAN/NAS
+                </li>
+                <li><strong>Networking & Infrastructure:</strong> TCP/IP, subnetting, networking troubleshooting, basic
+                    firewall rules</li>
+                <li><strong>Soft Skills:</strong> Strong problem-solving ability, self-motivated, quick learner, highly
+                    organized, excellent written and verbal communication skills</li>
+            </ul>
+
+            <!-- EXPERIENCE -->
+            <h2>Professional Experience</h2>
+
+            <div class="job-header">
+                <div class="job-title">Cultural Arts Tech Asst (Audio Engineer)</div>
+                <div class="job-meta">City of Rexburg – Rexburg, ID | Apr 2023 – Present</div>
+            </div>
+            <ul>
+                <li>Leverage 20+ years of audio expertise to optimize sound quality and prevent feedback</li>
+                <li>Deliver training on proper audio techniques and equipment usage</li>
+                <li>Coordinate setup and teardown of audio equipment for events</li>
+                <li>Diagnose and fix audio system issues to ensure seamless operation</li>
+            </ul>
+
+            <div class="job-header">
+                <div class="job-title">IT Technical Support Engineer L2</div>
+                <div class="job-meta">DELL EMC – Draper, UT | Dec 2020 – Sept 2021</div>
+            </div>
+            <ul>
+                <li>Resolved issues on Dell EMC Isilon NAS systems (SMB/NFS), improving uptime and data access</li>
+                <li>Analyzed logs and network configurations to determine root cause and provide resolution</li>
+                <li>Troubleshot AD, DNS, and authentication issues to maintain secure file share access</li>
+                <li>Provided expert recommendations during critical incidents, reducing customer downtime</li>
+                <li>Utilized Linux command line and internal tools to diagnose file system and protocol-related issues
+                </li>
+            </ul>
+
+            <div class="job-header">
+                <div class="job-title">Senior Technical Support Analyst</div>
+                <div class="job-meta">FireEye (now Trellix) – Draper, UT | Oct 2018 – Aug 2019</div>
+            </div>
+            <ul>
+                <li>Supported deployment, configuration, and troubleshooting of FireEye appliances including Network
+                    Security (NX) and Email Threat Protection (ETP) cybersecurity solutions</li>
+                <li>Investigated security incidents using PCAPs, logs, and real-time network traffic analysis tools</li>
+                <li>Authored knowledge base articles documenting recurring issues and best practices</li>
+                <li>Researched CVEs and provided actionable insights to customers and internal teams</li>
+                <li>Reviewed emails, attachments, and traffic for malware, phishing, and other advanced threats</li>
+            </ul>
+
+            <div class="job-header">
+                <div class="job-title">IT Technical Support Engineer L2</div>
+                <div class="job-meta">DELL EMC – Draper, UT | Feb 2013 – Sept 2018</div>
+            </div>
+            <ul>
+                <li>Delivered above 90% customer satisfaction consistently across thousands of support cases</li>
+                <li>Trained colleagues on VMAX/PowerMax Linux container and Guest OS as Utah’s sole SME</li>
+                <li>Diagnosed hardware and software faults to ensure data integrity and prevent data loss</li>
+                <li>Performed preventative maintenance through VMAX and VPLEX health checks and testing</li>
+                <li>Identified VPLEX and VMAX performance issues and advised on tuning and configuration</li>
+            </ul>
+        </main>
     </div>
-    <ul>
-        <li>Leverage 20+ years of audio expertise to optimize sound quality and prevent feedback</li>
-        <li>Deliver training on proper audio techniques and equipment usage</li>
-        <li>Coordinate setup and teardown of audio equipment for events</li>
-        <li>Diagnose and fix audio system issues to ensure seamless operation</li>
-    </ul>
-
-    <div class="job-header">
-        <div class="job-title">IT Technical Support Engineer L2</div>
-        <div class="job-meta">DELL EMC – Draper, UT | Dec 2020 – Sept 2021</div>
-    </div>
-    <ul>
-        <li>Resolved issues on Dell EMC Isilon NAS systems (SMB/NFS), improving uptime and data access</li>
-        <li>Analyzed logs and network configurations to determine root cause and provide resolution</li>
-        <li>Troubleshot AD, DNS, and authentication issues to maintain secure file share access</li>
-        <li>Provided expert recommendations during critical incidents, reducing customer downtime</li>
-        <li>Utilized Linux command line and internal tools to diagnose file system and protocol-related issues</li>
-    </ul>
-
-    <div class="job-header">
-        <div class="job-title">Senior Technical Support Analyst</div>
-        <div class="job-meta">FireEye (now Trellix) – Draper, UT | Oct 2018 – Aug 2019</div>
-    </div>
-    <ul>
-        <li>Supported deployment, configuration, and troubleshooting of FireEye appliances including Network Security
-            (NX) and Email Threat Protection (ETP) cybersecurity solutions</li>
-        <li>Investigated security incidents using PCAPs, logs, and real-time network traffic analysis tools</li>
-        <li>Authored knowledge base articles documenting recurring issues and best practices</li>
-        <li>Researched CVEs and provided actionable insights to customers and internal teams</li>
-        <li>Reviewed emails, attachments, and traffic for malware, phishing, and other advanced threats</li>
-    </ul>
-
-    <div class="job-header">
-        <div class="job-title">IT Technical Support Engineer L2</div>
-        <div class="job-meta">DELL EMC – Draper, UT | Feb 2013 – Sept 2018</div>
-    </div>
-    <ul>
-        <li>Delivered above 90% customer satisfaction consistently across thousands of support cases</li>
-        <li>Trained colleagues on VMAX/PowerMax Linux container and Guest OS as Utah’s sole SME</li>
-        <li>Diagnosed hardware and software faults to ensure data integrity and prevent data loss</li>
-        <li>Performed preventative maintenance through VMAX and VPLEX health checks and testing</li>
-        <li>Identified VPLEX and VMAX performance issues and advised on tuning and configuration</li>
-    </ul>
-
-
-
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Eli Hansen | U.S.A.</p>
+        <p id="lastModified">Last Modified:</p>
+    </footer>
+    <script src="scripts/dates.js"></script>
 </body>
 
 </html>
