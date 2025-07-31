@@ -18,7 +18,7 @@ body {
 
 /* Resume container */
 .resume-container {
-    background: white);
+    background: white;
     max-width: 816px;
     width: 100%;
     margin: 0 auto;
@@ -58,15 +58,19 @@ hr {
 
 /* Section headings */
 h2 {
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    border-bottom: 2px solid #000;
     padding-top: 1px;
     padding-bottom: 1px;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-size: 1.25rem;
     text-transform: uppercase;
-    color: #000000;
+    color: #150E60;
+}
+
+.heading-name {
+    background-color: #CFE6FF;
 }
 
 .education-degree {
@@ -89,8 +93,14 @@ h2 {
     white-space: nowrap;
 }
 
+.job-header .job-title:first-child {
+    margin-top: 20px;
+}
 
 .job-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: baseline;
     margin-bottom: 0.3rem;
 }
 
@@ -105,15 +115,27 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
+.job-dates {
+    text-align: right;
+    white-space: nowrap;
+    font-size: smaller;
+}
+
+.job-bullets {
+    margin-bottom: 1.5rem;
+}
+
+
 /* List spacing */
 ul {
     margin-top: 0;
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
     padding-left: 1.2rem;
 }
 
 ul li {
     margin-bottom: 0.5rem;
+    text-wrap: wrap;
 }
 
 li::marker {
