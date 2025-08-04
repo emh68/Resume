@@ -1,4 +1,25 @@
-@media (max-width: 600px) {
+@media (min-width: 600px) {
+
+    .resume-container {
+        padding: 1rem;
+    }
+
+    .header-links {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .header-links a {
+        flex: none;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
     .education-entry {
         display: block;
     }
@@ -6,14 +27,6 @@
     .degree-date {
         text-align: left;
         margin-top: 0.25rem;
-    }
-
-    .resume-container {
-        padding: 1rem;
-    }
-
-    h2 {
-        font-size: 1.1rem;
     }
 
     .job-title {
