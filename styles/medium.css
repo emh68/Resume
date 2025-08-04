@@ -1,8 +1,8 @@
 @media (min-width: 600px) {
 
-    .resume-container {
+    /* .resume-container {
         padding: 1rem;
-    }
+    } */
 
     .header-links {
         flex-direction: row;
