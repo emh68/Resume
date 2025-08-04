@@ -38,10 +38,12 @@ header h1 {
 }
 
 header a {
-    margin: 0 0.5rem;
+    /* margin: 0 0.5rem;
     text-decoration: none;
     color: #0073b1;
-    font-weight: 500;
+    font-weight: 500; */
+    display: grid;
+    grid-template-columns: 1fr auto;
 }
 
 header a:hover {
@@ -91,6 +93,94 @@ h2 {
     font-size: smaller;
     color: #444;
     white-space: nowrap;
+}
+
+.skill-item {
+    display: inline;
+    position: relative;
+    cursor: pointer;
+    border-bottom: 1px dotted transparent;
+    /* underline only on hover */
+    white-space: nowrap;
+    /* prevent skill breaking onto multiple lines */
+    margin-right: 0;
+    /* remove default spacing */
+    padding-right: 0;
+}
+
+/* Add exactly one space between adjacent skill-item spans */
+.skill-item+.skill-item::before {
+    content: " ";
+}
+
+/* Show dotted underline on hover */
+.skill-item:hover {
+    border-bottom: 1px dotted #666;
+}
+
+/* Tooltip styling */
+.tooltip {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 10;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s ease;
+    width: 160px;
+    font-size: 0.85em;
+    pointer-events: none;
+}
+
+/* Show tooltip on skill hover */
+.skill-item:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Progress bar container inside tooltip */
+.progress-bar {
+    display: flex;
+    margin-top: 8px;
+    height: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #555;
+    /* dark background */
+    user-select: none;
+}
+
+/* Each segment of the progress bar */
+.progress-segment {
+    flex: 1;
+    background-color: #777;
+    /* default unfilled color */
+    border-right: 1px solid #444;
+    /* subtle division lines */
+    transition: background-color 0.3s ease;
+}
+
+/* Remove border-right on last segment */
+.progress-segment:last-child {
+    border-right: none;
+}
+
+/* Filled segment color */
+.progress-segment.filled {
+    background-color: #4caf50;
+    /* green */
+}
+
+/* Optional: adjust font and layout for ul and li */
+li {
+    margin-bottom: 1em;
 }
 
 .job-header .job-title:first-child {
